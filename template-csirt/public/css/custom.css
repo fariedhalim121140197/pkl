@@ -1,0 +1,154 @@
+/* Footer Container */
+.footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+.rata-tengah {
+    text-align: center;
+}
+
+/* Footer Top */
+.footer-top {
+    border-bottom: 1px solid #4e5d6c;
+    padding-bottom: 30px;
+}
+
+/* Flexbox Layout for Footer Top */
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Footer About Section */
+.footer-about .logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.footer-about a {
+    color: #006bdd;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.footer-about a:hover {
+    color: #3498db;
+}
+
+/* Social Links */
+.footer .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+    position: relative; /* Tambahkan properti position */
+}
+
+.footer .social-links a svg {
+    width: 30px;
+    height: 30px;
+    fill: #ecf0f1; /* Warna ikon */
+}
+
+.footer .social-links a:hover svg {
+    fill: #3498db; /* Warna ikon saat hover */
+}
+
+/* Footer Contact Section */
+.footer-contact {
+    text-align: left; /* Align text to the left */
+    margin-left: auto; /* Pushes the contact section to the far right */
+    margin-right: 0; /* Ensure it goes to the right edge */
+    padding-right: 0; /* Remove padding to ensure it goes to the right edge */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.footer-contact h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    color: #bdc3c7;
+}
+
+.footer-contact strong {
+    color: #ecf0f1;
+}
+
+.footer-contact span {
+    color: #bdc3c7;
+}
+
+/* Footer Copyright Section */
+.copyright {
+    background: #1a252f;
+    padding: 20px 0;
+    color: #bdc3c7;
+    font-size: 14px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.copyright strong {
+    color: #ecf0f1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1023px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer .social-links a {
+        margin-right: 0;
+    }
+
+    #footer {
+        padding-bottom: 1rem; /* Adjust padding as needed */
+    }
+
+    .footer-about,
+    .footer-contact {
+        text-align: center; /* Center-align the text */
+        margin-bottom: 1.5rem; /* Add margin for spacing */
+    }
+
+    .footer-about .logo {
+        justify-content: center; /* Center the logo */
+    }
+
+    .footer-about a {
+        display: block; /* Ensure the links are displayed as block elements */
+        margin-top: 0.5rem; /* Add margin for spacing */
+    }
+
+    .footer-contact h4 {
+        margin-top: 1rem; /* Add margin for spacing */
+    }
+
+    .footer-contact p {
+        margin-bottom: 0.5rem; /* Adjust bottom margin for spacing */
+    }
+
+    .social-links {
+        justify-content: center; /* Center the social links */
+    }
+}
